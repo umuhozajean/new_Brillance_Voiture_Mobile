@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavage de Voiture à Domicile - Rapide et Facile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="images/logo.png" alt="Logo Lavage de Voiture" class="logo">
+        </div>
+        <nav class="header-center">
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">À Qui Nous Servons</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="#" class="btn-book">Réserver</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <span class="close" id="close-menu">&times;</span>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">À Qui Nous Servons</a></li>
+            <li><a href="#">À Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Votre Voiture, Lavée Directement Chez Vous</h1>
+            <p>Gagnez du temps et profitez du confort. Nous vous offrons des services de lavage de voiture de qualité directement à domicile.</p>
+            <a href="#" class="btn-primary">Réserver</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Pourquoi Nous Choisir ?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <i class="fa-solid fa-water"></i>
+                <h3>Produits Écologiques</h3>
+                <p>Respectueux de votre voiture et de l’environnement.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Rapide et Efficace</h3>
+                <p>Nous valorisons votre temps et offrons un service rapide.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-star"></i>
+                <h3>Équipe Hautement Notée</h3>
+                <p>Approuvée par des milliers de clients satisfaits.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brillance Voiture Mobile. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNav = document.getElementById('mobile-nav');
+        const closeMenu = document.getElementById('close-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileNav.style.display = 'block';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileNav.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
